@@ -95,17 +95,17 @@
 	
 	<distributionManagement>
 	
-	    <repository>
+	    <!--<repository>
 	      <id>nexus</id>
 	      <name>mavenrepo-release</name>
 	      <url>http://3.108.63.238:8081/repository/mavenrepo-snapshot/</url>
-	    </repository>
+	    </repository>-->
 	    
-	    <!--<snapshotRepository>
+	    <repository>
 	      <id>nexus</id>
-	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://54.255.174.111:8081/repository/flipkart-snapshot/</url>
-	    </snapshotRepository>-->
+	      <name>maven_proxy_snapshot</name>
+	      <url>http://ec2-13-127-232-8.ap-south-1.compute.amazonaws.com:8081/repository/maven_proxy_snapshot/</url>
+	    </repository>
 	    
 	</distributionManagement>
 	
