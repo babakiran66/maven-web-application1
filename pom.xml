@@ -98,7 +98,7 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>mavenrepo-snapshot</name>
-	      <url>http://ec2-65-2-63-165.ap-south-1.compute.amazonaws.com:8081/repository/mavenrepo-snapshot//</url>
+	      <url>http://ec2-65-2-63-165.ap-south-1.compute.amazonaws.com:8081/repository/mavenrepo-snapshot/</url>
 	    </repository>
 	    
 	    <!--<repository>
