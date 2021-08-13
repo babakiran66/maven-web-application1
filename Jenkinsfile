@@ -15,7 +15,8 @@ node ('master')
   
   stage("CheckOutCodeGit")
   {
-   git branch: 'master', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+   git branch: 'master', credentialsId: 'c7c9ec35-23f2-4f25-9c52-86cf778ebb3c', url: 'https://github.com/babakiran66/maven-web-application1.git'
+   
  }
  
  stage("Build")
@@ -23,20 +24,6 @@ node ('master')
  sh "${mavenHome}/bin/mvn clean package"
  }
  
-  /*
- stage("ExecuteSonarQubeReport")
- {
- sh "${mavenHome}/bin/mvn sonar:sonar"
- }
- 
- stage("UploadArtifactsintoNexus")
- {
- sh "${mavenHome}/bin/mvn deploy"
- }
- 
-  stage("DeployAppTomcat")
- {
-  sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
-    sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war  ec2-user@15.206.91.239:/opt/apache-tomcat-9.0.34/webapps/" 
-  }
- }
+ withCredentials([string(credentialsId: '1d9ae8fc-a423-433d-949c-20ab584bfa14', variable: 'Dockerhubpassword')]) {
+    // some block
+}
