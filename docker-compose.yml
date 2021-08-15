@@ -1,7 +1,7 @@
 version: '3.1'
 services:
   springboot:
-    image: dockerhandson/maven-web-app:VERSION
+    image: kiran66/mavenwebmyimage:VERSION
     container_name : mycontainer
     restart: always
     ports:
