@@ -4,8 +4,5 @@ services:
     image: dockerhandson/maven-web-app:VERSION
     restart: always
     ports:
-    - 9090:8080
-    networks:
-    - mavenappbridge
-networks:
-  mavenappbridge:
+    - 8080:8080
+   
