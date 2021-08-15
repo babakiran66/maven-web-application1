@@ -3,7 +3,6 @@ services:
   springboot:
     image: dockerhandson/maven-web-app:VERSION
     container_name : mycontainer
-    replicas : 2
     restart: always
     ports:
     - 8080:8080
